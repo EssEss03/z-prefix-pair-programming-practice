@@ -60,16 +60,16 @@ describe('Blog', () => {
   })
 
 
-  // it('allows you to see all available genres of blogs', () => {
-  //   let blog = new Blog();
-  //   expect(blog.getAllGenres()).toEqual("There are no genres available")
+  it('allows you to see all available genres of blogs', () => {
+    let blog = new Blog();
+    expect(blog.getAllGenres()).toEqual("There are no genres available")
 
-  //   blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
-  //   blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
-  //   blog.addBlogPost("A Blog About Shoes", "Steve Madden", "Fashion")
-  //   blog.addBlogPost("Gardening in High Altitudes", "The Garden Master", "Home Improvement")
-  //   expect(blog.getAllGenres()).toEqual(["Sports", "Sports", "Fashion", "Home Improvement"])
-  // })
+    blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
+    blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
+    blog.addBlogPost("A Blog About Shoes", "Steve Madden", "Fashion")
+    blog.addBlogPost("Gardening in High Altitudes", "The Garden Master", "Home Improvement")
+    expect(blog.getAllGenres()).toEqual(["Sports", "Sports", "Fashion", "Home Improvement"])
+  })
 
 
   // it('it allows a user to add comments to a blog', () => {
