@@ -8,15 +8,15 @@ describe('Blog', () => {
   })
 
 
-  // it('allows adding a new blog', () => {
-  //   let blog = new Blog();
+  it('allows adding a new blog', () => {
+    let blog = new Blog();
 
-  //   blog.addBlogPost("Blog Post 1")
-  //   expect(blog.getBlogPosts()).toEqual(['Blog Post 1'])
-  //   blog.addBlogPost("Blog Post 2")
-  //   blog.addBlogPost("Blog Post 3")
-  //   expect(blog.getBlogPosts()).toEqual(['Blog Post 1', 'Blog Post 2', 'Blog Post 3'])
-  // })
+    blog.addBlogPost("Blog Post 1")
+    expect(blog.getBlogPosts()).toEqual(['Blog Post 1'])
+    blog.addBlogPost("Blog Post 2")
+    blog.addBlogPost("Blog Post 3")
+    expect(blog.getBlogPosts()).toEqual(['Blog Post 1', 'Blog Post 2', 'Blog Post 3'])
+  })
 
 
   // it('allows you to see all authors on the site', () => {
