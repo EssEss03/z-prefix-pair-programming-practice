@@ -38,26 +38,26 @@ describe('Blog', () => {
   })
 
 
-  // it('allows you to see all blogs of a specific genre', () => {
-  //   let blog = new Blog();
+  it('allows you to see all blogs of a specific genre', () => {
+    let blog = new Blog();
 
-  //   blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
-  //   blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
-  //   blog.addBlogPost("A Blog About Shoes", "Steve Madden", "Fashion")
-  //   blog.addBlogPost("Gardening in High Altitudes", "The Garden Master", "Home Improvement")
-  //   expect(blog.getBlogsFromGenre("Sports")).toEqual([
-  //     { 
-  //       title: "How to Swim Fast", 
-  //       author: "Michael Phelps", 
-  //       genre: "Sports"
-  //     }, 
-  //     {
-  //       title: "I Love Football!", 
-  //       author: "Tom Brady",
-  //       genre: "Sports"
-  //     }
-  //   ])
-  // })
+    blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
+    blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
+    blog.addBlogPost("A Blog About Shoes", "Steve Madden", "Fashion")
+    blog.addBlogPost("Gardening in High Altitudes", "The Garden Master", "Home Improvement")
+    expect(blog.getBlogsFromGenre("Sports")).toEqual([
+      { 
+        title: "How to Swim Fast", 
+        author: "Michael Phelps", 
+        genre: "Sports"
+      }, 
+      {
+        title: "I Love Football!", 
+        author: "Tom Brady",
+        genre: "Sports"
+      }
+    ])
+  })
 
 
   // it('allows you to see all available genres of blogs', () => {
