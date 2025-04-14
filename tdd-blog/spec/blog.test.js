@@ -27,15 +27,15 @@ describe('Blog', () => {
   })
 
 
-  // it('allows you to see who the author of a specific blog was', () => {
-  //   let blog = new Blog();
+  it('allows you to see who the author of a specific blog was', () => {
+    let blog = new Blog();
 
-  //   blog.addBlogPost("How to Swim Fast", "Michael Phelps")
-  //   blog.addBlogPost("Movie Review: Avatar")
-  //   expect(blog.getSpecificBlogAuthor("How to Swim Fast")).toEqual("Michael Phelps")
-  //   expect(blog.getSpecificBlogAuthor("Makeup for Dummies")).toEqual("No such blog post")
-  //   expect(blog.getSpecificBlogAuthor("Movie Review: Avatar")).toEqual("Blog has no author")
-  // })
+    blog.addBlogPost("How to Swim Fast", "Michael Phelps")
+    blog.addBlogPost("Movie Review: Avatar")
+    expect(blog.getSpecificBlogAuthor("How to Swim Fast")).toEqual("Michael Phelps")
+    expect(blog.getSpecificBlogAuthor("Makeup for Dummies")).toEqual("No such blog post")
+    expect(blog.getSpecificBlogAuthor("Movie Review: Avatar")).toEqual("Blog has no author")
+  })
 
 
   // it('allows you to see all blogs of a specific genre', () => {
