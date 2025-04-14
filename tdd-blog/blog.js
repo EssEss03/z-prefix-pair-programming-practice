@@ -81,4 +81,7 @@ getComentsBy(username) {
   };
 }
 
+deleteBlog(title) {
+  this.posts = this.posts.filter(post => post.title !== title);
+}
 module.exports = Blog;
