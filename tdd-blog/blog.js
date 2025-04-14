@@ -21,4 +21,18 @@ class Blog {
       .map(post => post.author);
 }
 
+  getSpecificBlogAuthor() {
+    const post = this.posts.find(post => post.title === title);
+
+    if (!post) {
+      return "No such blog post";
+    }
+
+    if (!post.author) {
+      return "Blog has no author";
+    }
+
+    return post.author;
+  }
+
 module.exports = Blog;
