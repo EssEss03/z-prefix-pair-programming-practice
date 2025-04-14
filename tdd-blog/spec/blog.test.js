@@ -19,12 +19,12 @@ describe('Blog', () => {
   })
 
 
-  // it('allows you to see all authors on the site', () => {
-  //   let blog = new Blog();
+  it('allows you to see all authors on the site', () => {
+    let blog = new Blog();
 
-  //   blog.addBlogPost("Life as a Cartoon", "Homer Simpson")
-  //   expect(blog.getBlogAuthors()).toEqual(["Homer Simpson"])
-  // })
+    blog.addBlogPost("Life as a Cartoon", "Homer Simpson")
+    expect(blog.getBlogAuthors()).toEqual(["Homer Simpson"])
+  })
 
 
   // it('allows you to see who the author of a specific blog was', () => {
