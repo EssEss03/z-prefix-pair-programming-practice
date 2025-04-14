@@ -61,4 +61,24 @@ getBlogComments(title) {
   return [{ comments: post.comments }];
 }
 
+getComentsBy(username) {
+  const userComments = [];
+
+  this.posts.forEach(post => {
+    post.comments.forEach(comment => {
+      if (comment.user === username) {
+        user.Comments.push({
+          article: post.title,
+          comment: comment.comment
+        });
+      }
+    });
+  });
+
+  return {
+    user: username,
+    comments: userComments
+  };
+}
+
 module.exports = Blog;
