@@ -46,5 +46,19 @@ getAllGenres() {
 
   return this.posts.map(post => post.genre);
 }
-  
+
+addComment(title, user, comment) {
+  cont post = this.posts.find(post => post.title === title);
+  if (!post) return;
+
+  post.comments.push({ user, comment });
+}
+
+getBlogComments(title) {
+  cont post = this.posts.find(post => post.title === title);
+  if (!post) return [];
+
+  return [{ comments: post.comments }];
+}
+
 module.exports = Blog;
