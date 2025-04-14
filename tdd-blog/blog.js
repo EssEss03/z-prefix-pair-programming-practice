@@ -35,4 +35,8 @@ class Blog {
     return post.author;
   }
 
+getBlogsFromGenre(genre) {
+  return this.posts.filter(post => post.genre === genre);
+}
+
 module.exports = Blog;
