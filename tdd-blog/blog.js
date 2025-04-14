@@ -39,4 +39,12 @@ getBlogsFromGenre(genre) {
   return this.posts.filter(post => post.genre === genre);
 }
 
+getAllGenres() {
+  if (this.posts.length === 0) {
+    return "There are no genres avaiable";
+  }
+
+  return this.posts.map(post => post.genre);
+}
+  
 module.exports = Blog;
