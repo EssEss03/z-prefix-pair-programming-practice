@@ -14,6 +14,11 @@ class Blog {
     cont post = {title, author, genre, comments: [] };
     this.posts.push(post);
   }
+
+  getBlogAuthors() {
+    return this.posts
+      .filter(post => post.author !== null) //Only include posts with an author
+      .map(post => post.author);
 }
 
 module.exports = Blog;
