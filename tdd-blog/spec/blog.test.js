@@ -98,20 +98,20 @@ describe('Blog', () => {
   })
 
 
-  // it('allows you to see all comments written by a specific user', () => {
-  //   let blog = new Blog();
+  it('allows you to see all comments written by a specific user', () => {
+    let blog = new Blog();
 
-  //   blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
-  //   blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
-  //   blog.addComment("How to Swim Fast", "katiehoesley", "I hate this article!")
-  //   blog.addComment("I Love Football!", "ashcoca", "I love football too! Lol!")
-  //   blog.addComment("I Love Football!", "brandon_ck", "GO FALCONS!")
-  //   expect(blog.getCommentsBy("katiehoesley")).toEqual({ user: "katiehoesley", comments: 
-  //     [
-  //       { article: "How to Swim Fast", comment: "I hate this article!"}
-  //     ]
-  //   })
-  // })
+    blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
+    blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
+    blog.addComment("How to Swim Fast", "katiehoesley", "I hate this article!")
+    blog.addComment("I Love Football!", "ashcoca", "I love football too! Lol!")
+    blog.addComment("I Love Football!", "brandon_ck", "GO FALCONS!")
+    expect(blog.getCommentsBy("katiehoesley")).toEqual({ user: "katiehoesley", comments: 
+      [
+        { article: "How to Swim Fast", comment: "I hate this article!"}
+      ]
+    })
+  })
 
 
 
