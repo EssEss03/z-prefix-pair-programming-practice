@@ -115,19 +115,19 @@ describe('Blog', () => {
 
 
 
-  // it('can delete a blog by the blog title', () => {
-  //   let blog = new Blog();
+  it('can delete a blog by the blog title', () => {
+    let blog = new Blog();
    
-  //   blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
-  //   blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
-  //   expect(blog.getBlogPosts()).toEqual(["I Love Football!", "How to Swim Fast"])
+    blog.addBlogPost("I Love Football!", "Tom Brady", "Sports")
+    blog.addBlogPost("How to Swim Fast", "Michael Phelps", "Sports")
+    expect(blog.getBlogPosts()).toEqual(["I Love Football!", "How to Swim Fast"])
 
-  //   blog.addComment("How to Swim Fast", "katiehoesley", "I hate this article!")
-  //   blog.deleteBlog("How to Swim Fast")
-  //   expect(blog.getBlogPosts()).toEqual(["I Love Football!"])
+    blog.addComment("How to Swim Fast", "katiehoesley", "I hate this article!")
+    blog.deleteBlog("How to Swim Fast")
+    expect(blog.getBlogPosts()).toEqual(["I Love Football!"])
 
-  //   blog.deleteBlog("I Love Football!")
-  //   expect(blog.getBlogPosts()).toEqual("There are 0 blog posts")
-  // })
+    blog.deleteBlog("I Love Football!")
+    expect(blog.getBlogPosts()).toEqual("There are 0 blog posts")
+  })
 
 })
